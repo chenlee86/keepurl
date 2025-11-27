@@ -14,8 +14,6 @@
 📸 截图预览（可选）
 
 <img width="2083" height="1238" alt="image" src="https://github.com/user-attachments/assets/6084f190-0e08-46e9-8902-b0b51bcd446a" />
-
-
 ✨ 功能特点
 🔍 1. 多 URL 实时监控
 
@@ -32,28 +30,12 @@
 三列栅格布局、渐变背景、卡片设计
 
 🔐 3. 支持后端密码验证
-
 新增 URL
-
 删除 URL
-
 复制 URL
-
 退出登录
 
-💾 4. 存储基于 Cloudflare KV
 
-多设备共享
-
-持久化
-
-🤖 5. Telegram 报警 & 日报
-
-URL 异常实时报警
-
-Cron 定时任务每日总结
-
-Markdown 格式美观输出
 
 ⚙️ 安装与部署
 1️⃣ 创建 Cloudflare Worker
@@ -79,15 +61,37 @@ Namespace: keepURL
 
 在 Worker → Settings → Variables → 添加以下：
 
-名字	值	描述
+名字	           值	            描述
 TELEGRAM_TOKEN	你的 Bot Token	BotFather 创建
-CHAT_ID	你的 TG 群/用户 ID	/getChatId
-PASSWORD	你的后台密码	用于新增/删除 URL
+CHAT_ID	        你的 TG 群/用户 ID	/getChatId
+PASSWORD	      你的后台密码	用于新增/删除 URL
+
 5️⃣ 绑定 Cron Trigger（可选）
 
 启用自动巡检（例如 30 分钟一次）：
 
 */30 * * * *
+
+
+
+
+
+
+
+💾 4. 存储基于 Cloudflare KV
+
+多设备共享
+
+持久化
+
+🤖 5. Telegram 报警 & 日报
+
+URL 异常实时报警
+
+Cron 定时任务每日总结
+
+Markdown 格式美观输出
+
 
 📌 使用说明
 打开控制台
