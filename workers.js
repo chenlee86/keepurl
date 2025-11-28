@@ -591,7 +591,7 @@ async function checkUrl(url) {
       headers: { 'User-Agent': 'KeepURL-Monitor/1.0' }
     });
 
-    if (res.status < 500) {
+    if (res.status < 300) {
       return true;
     } else {
       await sendTelegramMessage(`⚠️ *访问异常*\nURL: ${url}\n状态码: ${res.status}`);
