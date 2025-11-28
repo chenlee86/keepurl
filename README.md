@@ -1,3 +1,4 @@
+代码还有点小问题 欢迎测试，环境变量更新后会重新部署 老的监控链接记得保存
 🚀 KeepURL Monitor — 多地址云监控 + Web UI + Telegram 通知
 
 KeepURL Monitor 是一个运行在 Cloudflare Workers 上的轻量级多网址监控系统，具备：
